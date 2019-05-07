@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC');
+
+:root {
+    --btn-bg-color: #14eebd;
+    --btn-width: 96px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 32px;
+    background-image: url(../fylo-landing-page-558498-master/images/bg-intro-desktop.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top {
+    padding-right: 64px;
+    padding-left: 64px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+
+.top.upper .left {
+    flex: 0 1 100px;
+}
+
+.top.upper .right {
+    flex: 0 1 200px;
+}
+
+.left .summary {
+    margin-top: 100px;
+}
+
+.right .btns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sign-in-btn, #sign-up-btn {
+    color: #fff;
+    width: var(--btn-width);
+    height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+}
+
+#sign-up-btn {
+    background: var(--btn-bg-color);
+    border: 0px solid transparent;
+    border-radius: 3px;
+}
+
+.top.lower .left {
+    flex: 0 1 50%;
+}
+
+.main-text {
+    font-weight: bold;
+}
+
+.sub-text {
+    color: #8e8e8e;
+}
+
+.left .summary .main-text {
+    font-size: 3em;
+    line-height: 1.2em;
+}
+
+.left .summary .sub-text {
+    margin-top: 16px;
+    font-size: 0.9em;
+    word-spacing: 0.2em;
+}
+
+#get-started-btn {
+    margin-top: 24px;
+    background-color: var(--btn-bg-color);
+    width: 184px;
+    height: 48px;
+    color: #fff;
+    text-transform: capitalize;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    font-family:  'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.top.lower .right {
+    flex: 0 1 50%;
+}
+
+.right img {
+    padding-top: 120px;
+    display: block;
+    width: 250px;
+    height: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+.mid-text {
+    margin-top: 400px;
+    text-align: center;
+}
+
+.mid-text * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 550px;
+}
+.main-text {
+    max-width: 500px;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+.mid-text .sub-text span {
+    display: inline-block;
+    margin: 16px 32px 0 32px;
+}
+
+.sub-text {
+    font-size: 0.8em;
+}
+
+.promotional {
+    padding-right: 64px;
+    padding-left: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.promotional h3 {
+    padding-top: 40px;
+    font-size: 1.4em;
+    color: #333;
+}
+
+.promotional > div {
+    margin-top: 80px;
+    flex-basis: 250px;
+}
+
+.promotional .icon {
+     height: 100px;
+}
+
+.apps-wrapper {
+    padding-right: 64px;
+    padding-left: 64px;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.textual {
+    flex: 0 0 29%;
+}
+
+.apps-wrapper > .textual {
+    max-width: 500px;
+}
+
+.apps-wrapper > .textual .sub-text {
+    margin-top: 40px;
+} 
+
+.apps {
+    flex: 0 0 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.apps > div {
+    box-shadow: 0 0 0 3px #8e8e8e22;
+    max-width: 200px;
+    border-radius: 2px;
+    height: 350px;
+}
+
+.apps > div:nth-child(2), .apps > div:nth-child(5) {
+    margin-top: -40px;
+}
+
+.apps .logo {
+    height: 37.5%;
+    display: block;
+    border-bottom: #8e8e8e33 solid 2px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apps img {
+    width: 60%;
+}
+
+.apps .textual {
+    padding: 0 30px;
+}
+
+.apps .textual > * {
+    padding-top: 10px;
+}
+
+.apps-wrapper ~ .mid-text {
+    margin-top: 200px;
+}
+
+.mid-text > #get-started-btn {
+    margin: 48px auto 0 auto;
+}
+
+footer {
+    background-color: rgb(0, 0, 50);
+    color: #fff;
+    margin-top: 80px;
+    padding-bottom: 150px;
+    padding-top: 80px;
+    padding-right: 80px;
+    padding-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer > * {
+    flex: 0 1 40%;
+    max-width: 700px;
+}
+
+.newsletter p {
+    margin-top: 32px;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 40px;
+    border: 0 solid transparent;
+    border-radius: 3px;
+}
+
+input[type="text"] {
+    width: 58%;
+    margin-right: 2%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type="button"] {
+    width: 38%;
+    background-color: var(--btn-bg-color);
+    color: #fff;
+    font-weight: bold;
+}
+
+.phone {
+    margin-top: 30px;
+}
+
+.email {
+    margin-top: 16px;
+}
+
+footer .icon {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+footer .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+footer .right > * {
+    flex: 0 0 minmax(75px, auto);
+}
+
+footer li {
+    color: #ffffff99;
+}
+
+footer li:first-child {
+    margin-top: 24px;
+}
+
+footer li ~ li {
+    margin-top: 16px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .apps-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .apps-wrapper > .textual .main-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .apps {
+        margin-top: 80px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .right {
+        flex-direction: column;
+    }
+
+    footer .right > * {
+        margin-top: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        background-image: url(../fylo-landing-page-558498-master/images/bg-intro-mobile.svg);
+        background-size: 60%;
+        padding: 16px;
+    }
+    
+    .top.upper .left {
+        flex: 0 1 50px;
+    }
+
+    .top.upper .right {
+        flex: 0 1 150px;
+    }
+
+    #sign-in-btn, #sign-up-btn {
+        width: 50%;
+    }
+    .top.lower {
+        justify-content: center;
+    }
+
+    .top.lower .right, .top.lower .left {
+        flex-basis: 80%;
+        text-align: center;
+    }
+
+    .top.lower .main-text {
+        font-size: 2em;
+    }
+
+    .top.lower img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .promotional {
+        justify-content: center;
+    }
+
+    .apps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .apps > div ~ div, .apps > div:nth-child(2), .apps > div:nth-child(5) {
+        margin-top: 20px;
+    }
+
+    footer {
+        padding-right: 50px;
+        padding-left: 32px;
+    }
+
+    footer .left input[type='text'] {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    footer .left input[type="button"] {
+        margin-left: auto;
+        display: block;
+        margin-right: -10px;
+    }
+}
